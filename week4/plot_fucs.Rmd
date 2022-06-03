@@ -1,0 +1,39 @@
+---
+title: "Plot Functions"
+author: "Rajesh Rajendran"
+date: '2022-06-03'
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Introduction
+- This application is very user friendly GUI for displaying the commonly used 
+distributions
+- The application plot's histograms of the distributions.
+- This is very useful for high-school and under graduate students who takes  
+first class in statistics and probability distributions.
+- The app allows to choose the number of points to be simulated for the selected distribution. 
+
+## Distributions
+The application creates the histogram for following distributions
+
+- Normal Distribution
+- Uniform Distribution
+- Log Normal Distribution
+- Exponential Distribution
+
+## Example Normal Distribution
+The app draws the histogram as in figure below. It is histogram of 1000 samples from random normal distribution function.
+
+```{r cars, echo = TRUE}
+hist(rnorm(1000), probability = TRUE)
+```
+
+## Conclusion
+
+- It is a fun application which allows students to play around with distribution
+in interactive way.
+- More distributions are to be added in future.
