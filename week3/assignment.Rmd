@@ -1,0 +1,20 @@
+---
+title: "Week3 Assignment"
+author: "Rajesh Rajendran"
+date: '2022-06-03'
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message=FALSE)
+```
+
+
+## Slide with Plot
+
+```{r plot, echo=FALSE}
+library(plotly)
+plot_ly(mtcars,x=~wt,y=~mpg,type="scatter", color = ~factor(cyl),size = ~hp)
+```
+
+## Thank You
